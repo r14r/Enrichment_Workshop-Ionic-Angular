@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-searchbar color="light"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="explore-header">
+    <div class="explore-header--title ion-padding">Explore</div>
+
+    <ion-button fill="clear" color="dark" class="ion-text-capitalize">
+      Topics
+      <ion-icon name="chevron-down-outline"></ion-icon>
+    </ion-button>
+  </div>
+  <div class="topics ion-padding-horizontal">
+    <ion-chip [outline]="true" *ngFor="let topic of topics">
+      <ion-label>{{ topic.name }}</ion-label>
+    </ion-chip>
+  </div>
+
+  <div class="courses ion-padding-vertical popular-courses">
+    <div class="courses--header ion-padding-horizontal ion-padding-bottom">
+      <ion-text class="courses--title">Popular courses</ion-text>
+      <ion-text class="courses--all" color="dark" [routerLink]="['/tabs/explore/popular']">
+        See All
+      </ion-text>
+    </div>
+    <div class="courses--list">
+      <ion-list>
+        <ion-item class="course" *ngFor="let course of popularCourses;">
+          <ion-label>
+            <div class="course--title">
+              <ion-text>{{ course.profile.displayName }}</ion-text>
+            </div>
+            <div class="course--location-organization">
+              <ion-text>{{ course.profile.organization }} &bull; {{ course.profile.location }}</ion-text>
+            </div>
+            <div class="course--topic">
+              <ion-chip [outline]="true">
+                <ion-label>{{ course.profile.topic }}</ion-label>
+              </ion-chip>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+
+  <div class="courses ion-padding-vertical top-rated-courses">
+    <div class="courses--header ion-padding-horizontal ion-padding-bottom">
+      <ion-text class="courses--title">Top-rated courses</ion-text>
+      <ion-text class="courses--all" color="dark" [routerLink]="['/tabs/explore/top-rated']">
+        See All
+      </ion-text>
+    </div>
+    <div class="courses--list">
+      <ion-list>
+        <ion-item class="course" *ngFor="let course of topRatedCourses">
+          <ion-label>
+            <div class="course--title">
+              <ion-text>{{ course.profile.displayName }}</ion-text>
+            </div>
+            <div class="course--location-organization">
+              <ion-text>{{ course.profile.organization }} &bull; {{ course.profile.location }}</ion-text>
+            </div>
+            <div class="course--topic">
+              <ion-chip [outline]="true">
+                <ion-label>{{ course.profile.topic }}</ion-label>
+              </ion-chip>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

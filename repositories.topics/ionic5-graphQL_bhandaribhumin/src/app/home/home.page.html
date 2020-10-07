@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      GraphQL
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GraphQL</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div *ngIf="loading">
+    Loading...
+  </div>
+  <div *ngIf="error">
+    Error :(
+  </div>
+  <div *ngIf="data">
+    <ion-list>
+      <ion-item *ngFor="let user of data">
+        {{ user.name }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

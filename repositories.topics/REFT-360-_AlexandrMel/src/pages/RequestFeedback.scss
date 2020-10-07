@@ -1,0 +1,112 @@
+.big-circle-pic-req {
+    border: 3px solid #d7eef8;
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+    margin: auto auto;
+    margin-top: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .profile-divider {
+    // border-bottom: 1px solid black;
+    font-size: 20px;
+    height: 40px;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+  }
+  .center-title {
+    width: 300px;
+  }
+  .advice_btn, .rating_btn, .plus_minus_btn {
+    height: 80px;
+    width: 80px;
+    margin:  auto;
+    margin-bottom: 10px;
+    border: 1px solid #3dc2ff;
+  }
+
+  .advice_btn {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+      left: 35%;
+      top: -14%;
+      font-size: 2.5rem;
+  }
+  .rating_btn {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+      right: -6%;
+      top: 60%;
+      font-size: 1.3rem;
+  }
+  .plus_minus_btn {
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+      left: -6%;
+      top: 60%;
+      font-size: 1.3rem;
+      padding: 0;
+      margin: 0;
+      width: 33%;
+      height: 33%;
+  }
+  .req-title {
+margin: 0;
+padding: 0;      
+font-size: 2rem;
+  }
+  .iconDuble, .iconDuble2, .iconDuble3, .iconDuble4 {
+    position: absolute;
+  }
+  .iconDuble {
+    left: -70%
+  }
+  .iconDuble2 {
+    right: -70%
+  }
+  .iconDuble3 {
+    left: 50%
+  }
+  .iconDuble4 {
+    right: 50%
+  }
+.adviceBtnLabel {
+  position: absolute;
+  left: 41%;
+  top: -22%;
+  font-size: 1rem;
+
+}
+.ratingBtnLabel {
+  position: absolute;
+  right: -1%;
+  top: 94%;
+  font-size: 1rem;
+
+}
+.plus_minusBtnLabel {
+  position: absolute;
+  left: -1%;
+  top: 95%;
+  font-size: 1rem;
+
+}
+.requestBtnLabel {
+  position: absolute;
+  left: 35%;
+  top: 67%;
+  font-size: 1.3rem;
+
+}

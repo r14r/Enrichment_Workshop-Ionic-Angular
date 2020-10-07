@@ -1,0 +1,18 @@
+ion-card-title {
+  margin-top: 8px;
+}
+
+.small-text {
+  color: var(--ion-color-secondary);
+}
+
+.detail-img {
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-color: var(--ion-color-tertiary);
+}
+
+.popover-icon, .icon {
+  color: var(--ion-color-primary-contrast) !important;
+}

@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Umrechnung Kilometer in Meilen
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label>Kilometer</ion-label>
+    <ion-input clearInput
+               placeholder="km"
+               type="number"
+               [(ngModel)]="eingabeKilometer">
+    </ion-input>
+  </ion-item>
+
+  &nbsp;
+
+  <ion-list>
+
+    <ion-radio-group [(ngModel)]="zieleinheit">
+
+      <ion-list-header>
+        <ion-label>Umrechnen in:</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Englische Meilen</ion-label>
+        <ion-radio slot="start" value="englischeMeilen"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Seemeilen</ion-label>
+        <ion-radio slot="start" value="seeMeilen"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Chinesische Meilen</ion-label>
+        <ion-radio slot="start" value="chinesischeMeilen"></ion-radio>
+      </ion-item>
+
+    </ion-radio-group>
+
+  </ion-list>
+
+  &nbsp;
+
+  <ion-button expand="block" (click)="onBerechnenButton()">Umrechnen</ion-button>
+
+</ion-content>

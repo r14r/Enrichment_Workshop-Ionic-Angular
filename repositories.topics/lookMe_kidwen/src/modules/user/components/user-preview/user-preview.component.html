@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-icon name="scan-outline"></ion-icon>
+            </ion-button>
+            <ion-searchbar disabled="true"></ion-searchbar>
+            <ion-button (click)="toggleTheme();">
+                <ion-icon name="moon-outline"></ion-icon>
+            </ion-button>
+            <ion-button>
+                <ion-icon name="cube-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <ion-img [src]="user?.avatarUrl" (click)="userMain();"></ion-img>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>{{user?.name}}</ion-col>
+                        <ion-button slot="clear">
+                            <ion-icon></ion-icon>
+                        </ion-button>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-chip>
+                                <ion-button fill="clear">
+                                    <ion-label>知乎盐值：</ion-label>
+                                    {{user.faceValue}}
+                                    <ion-icon></ion-icon>
+                                </ion-button>
+                            </ion-chip>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-button fill="clear" (click)="userMain();">
+                    <ion-label>个人主页</ion-label>
+                    <ion-icon></ion-icon>
+                </ion-button>
+            </ion-item>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

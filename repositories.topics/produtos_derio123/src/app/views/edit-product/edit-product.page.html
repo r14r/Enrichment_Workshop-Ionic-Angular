@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Atualizar Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+      <ion-input type="text" name="name" placeholder="Nome" [(ngModel)]="model.name">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Preço</ion-label>
+      <ion-input type="number" name="price" placeholder="0,00" [(ngModel)]="model.price">
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Vencimento</ion-label>
+      <ion-datetime displayFormat="DD/MM/YYYY" name="duedate" min="2017" max="2021-12-31" [(ngModel)]="model.duedate">
+      </ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-label>Categoria</ion-label>
+        <ion-select placeholder="Selecione uma" [(ngModel)]="model.category_id">
+          <ion-select-option *ngFor="let category of categories" value="{{category.id}}">
+            {{category.name}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Ativo</ion-label>
+      <ion-checkbox name="active" [(ngModel)]="model.active">
+      </ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="salvar()">
+      <ion-icon name="save"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

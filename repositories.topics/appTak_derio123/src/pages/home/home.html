@@ -1,0 +1,30 @@
+<ion-header >
+  <ion-navbar color="orange" no-border-bottom>
+    <ion-title class="ion-text-center">Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding no-border-bottom>
+  <ion-segment [(ngModel)]="cupom">
+    <ion-segment-button value="Fiscal">
+      Nota fiscal
+    </ion-segment-button>
+    <ion-segment-button value="Anotações">
+      Folhas de caderno
+    </ion-segment-button>
+
+    <ion-segment-button value="Quadro" title="">
+      Fotos do quadro
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="cupom">
+    <ion-list *ngSwitchCase="Fiscal">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="imgs/thumbnail-puppy-1.jpg" alt="">
+        </ion-thumbnail>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

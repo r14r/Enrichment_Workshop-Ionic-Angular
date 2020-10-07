@@ -1,0 +1,46 @@
+.fixed-region-name-bar {
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  //background-color: white;
+  //overflow: hidden;
+  border-bottom: 0.5px solid rgb(95, 95, 95);
+  z-index: 99;
+  margin-top: -5px;
+}
+
+.region-name-area {
+  overflow-x: scroll;
+  white-space: nowrap;
+  text-align: center;
+  margin: 0 10px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.region-name {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 2px 5px 2px;
+  margin: 1%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.selected-region-name {
+  color: rgb(89, 112, 173);
+  border-bottom: 0.5px solid rgb(89, 112, 173);
+}
+
+#list-container {
+  position: absolute;
+  top: calc(2% + 30px);
+  height: 92%;
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+  padding: 0;
+  overflow: auto;
+}

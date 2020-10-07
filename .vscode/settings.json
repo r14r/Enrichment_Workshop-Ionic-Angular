@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "**/.autoenv.d": true,
+
+    "**/node_modules": true
+  }
+}

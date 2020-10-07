@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Animation List
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="left">
+        <ion-button class="ion-no-padding" style="width: 80px" color="secondary" *ngFor="let btn of btnList"
+                    (click)="toggle(btn.className)">{{btn.name}}</ion-button>
+    </div>
+    <div class="right">
+        <div *ngFor="let item of list;let i=index" class="box" [classList]="['box '+selectClass]"
+             [ngStyle]="{'animation-delay':(i + 1) * 0.2+'s'}">
+            <ion-avatar>
+                <img [src]="item?.img">
+            </ion-avatar>
+            <p class="p-title">{{item?.name}}</p>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-searchbar placeholder="Pesquise os produtos" [(ngModel)]="searchText" (ionChange)="filterProducts($event)" [debounce]="250">
+  </ion-searchbar>
+
+  <ion-list>
+      <ion-item-sliding *ngFor="let product of products">
+        <ion-item>
+          <ion-label>{{ product.name }} </ion-label>
+          <ion-label>{{ product.category_name }}</ion-label>
+          <ion-label>{{ product.duedate | date: 'dd/MM/yyyy' }}</ion-label>
+          <h2 class="price">{{product.price | currency:'BRL':true}} </h2>
+        </ion-item>
+        <ion-item-options side="start">
+          <ion-item-option (click)="atProduct(product.id)">Favorite</ion-item-option>
+        </ion-item-options>
+    
+        <ion-item-options side="end">
+          <ion-item-option (click)="exProduct(product)">Excluir</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="add()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>Total:{{products.length }} </p>
+    <ion-list>
+      <ion-label>Listar inativos</ion-label>
+      <ion-toggle name="listaInativos" [(ngModel)]="onlyInactives" (ionChange)="getAllProducts()">
+      </ion-toggle>
+    </ion-list>
+  </ion-toolbar>
+</ion-footer>
+
+<!--  The world is your oyster.
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p> -->

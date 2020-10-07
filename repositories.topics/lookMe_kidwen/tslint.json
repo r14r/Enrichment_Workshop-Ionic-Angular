@@ -1,0 +1,14 @@
+{
+    "extends": "@kidwen/tslint/tslint.json",
+    "rules": {
+        "component-selector": [
+            true,
+            "element",
+            "app",
+            "kebab-case"
+        ]
+    },
+    "rulesDirectory": [
+        "codelyzer"
+    ]
+}

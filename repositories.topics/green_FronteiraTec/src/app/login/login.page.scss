@@ -1,0 +1,79 @@
+.img-responsive {
+  width: 200px;
+  height: 115px;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+ion-content {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translateY(-40%) translateX(50%);
+  max-height: 500px;
+}
+
+.inputs {
+  width: 280px;
+  margin: auto;
+}
+
+.textocheck {
+  padding-left: 10px;
+  color: #666;
+}
+
+.login {
+  width: 130px;
+}
+
+
+@media screen and (max-width: 319px){
+  .img-responsive {
+    width: 110px;
+    height: 70px;
+    margin-bottom: 0px;
+  }
+
+  .inputs {
+    width: 200px;
+    margin: auto;
+  }
+
+  .login {
+    width: 100px;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (min-height: 740px) {
+  .img-responsive {
+    width: 380px;
+    height: 210px;
+    margin-bottom: 40px;
+  }
+
+  .container {
+    max-height: 1000px;
+  }
+
+  .inputs {
+    width: 400px;
+    margin: auto;
+  }
+
+  .login {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .lembrar {
+    margin-top: 20px;
+  }
+}

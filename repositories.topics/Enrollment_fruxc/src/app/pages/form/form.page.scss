@@ -1,0 +1,23 @@
+@mixin cuts {
+    background-color: red;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+$bgcolor: green;
+.btn {
+    @include cuts;
+}
+
+.btn:hover {
+    background-color: $bgcolor;
+}

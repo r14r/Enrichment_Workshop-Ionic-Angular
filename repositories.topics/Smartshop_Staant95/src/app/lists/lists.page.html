@@ -1,0 +1,26 @@
+<ion-header class="header">
+    <ion-item lines="none">
+        <ion-text class="header-title" >Smartshop </ion-text>
+    </ion-item>
+</ion-header>
+
+<ion-content>
+    <app-list-card
+            *ngFor="let list of lists; let i = index"
+            [listOfCards]="list"
+            (cardId)="onCardDelete($event, i)">
+    </app-list-card>
+
+    <div *ngIf="!(listLength$ | async)" class="box-container" >
+                <ion-text color="secondary" class="ion-text-center empty-list-text">Non hai liste della spesa</ion-text>
+    </div>
+</ion-content>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="createCard($event)">
+
+    <ion-fab-button>
+        <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+</ion-fab>
+
+

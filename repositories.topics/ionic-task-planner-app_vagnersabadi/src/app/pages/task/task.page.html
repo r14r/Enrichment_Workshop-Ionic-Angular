@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="search-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar color="primary" class="user-details">
+    <ion-item class="transparent" lines="none">
+      <ion-avatar slot="start">
+        <img
+          src="https://avatars0.githubusercontent.com/u/12532889?s=460&u=758efee3e15b5e61f684a351fc82048426228f11&v=4">
+      </ion-avatar>
+      <ion-label class="names-occupation">
+        <h3>Vagner Sabadi</h3>
+        <p> Mobile Developer</p>
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+
+
+
+  <ion-list class="list-tasks">
+    <ion-item lines="none" class="transparent title-list">
+      <ion-label>
+        <h2>
+          My tasks
+        </h2>
+      </ion-label>
+      <ion-fab-button slot="end" color="success" class="btn-schendule" (click)="openSchebdule()">
+        <ion-icon name="calendar"></ion-icon>
+      </ion-fab-button>
+    </ion-item>
+
+    <ion-item lines="none" class="transparent task" *ngFor="let task of tasks">
+      <ion-fab-button slot="start" [color]="task.color" size="small" class="btn-fab-list">
+        <ion-icon [name]="task.icon"></ion-icon>
+      </ion-fab-button>
+
+      <ion-label>
+        <h3> {{ task.title }} </h3>
+        <p> {{ task.count_now }} task now &#8226; {{ task.count_started }} started</p>
+      </ion-label>
+
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list class="list-projects">
+    <ion-item lines="none" class="transparent title-list">
+      <ion-label>
+        <h2>
+          Active Projects
+        </h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col size="6" *ngFor="let project of projects">
+
+          <ion-card [color]="project.color" class="card-projects">
+            <div class="radial-progress" data-progress="0">
+              <div class="circle">
+                <div class="mask full" [style.transform]="'rotate(' + project.percentage * 100 + 'deg)'">
+                  <div class="fill" [style.transform]="'rotate(' + project.percentage * 100 + 'deg)'"></div>
+                </div>
+                <div class="mask half">
+                  <div class="fill" [style.transform]="'rotate(' + project.percentage * 100 + 'deg)'"></div>
+                  <div class="fill fix" [style.transform]="'rotate(' + project.percentage * 100 + 'deg)'"></div>
+                </div>
+              </div>
+              <div class="inset" [style.background-color]="project.colorHex">
+                <div class="percentage"> {{ project.percentage }}% </div>
+              </div>
+            </div>
+
+            <ion-card-content>
+              <ion-label>
+                <h3> {{ project.title }} </h3>
+                <p> {{ project.subTitle }} </p>
+              </ion-label>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+        <ion-col size="6">
+
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+
+  </ion-list>
+
+
+</ion-content>

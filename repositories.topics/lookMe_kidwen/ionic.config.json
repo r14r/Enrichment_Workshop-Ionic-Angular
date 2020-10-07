@@ -1,0 +1,7 @@
+{
+    "name": "lookMe",
+    "integrations": {
+        "capacitor": {}
+    },
+    "type": "angular"
+}

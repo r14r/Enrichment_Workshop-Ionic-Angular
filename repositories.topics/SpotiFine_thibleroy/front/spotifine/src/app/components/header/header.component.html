@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <div *ngIf="session.isAuth();else disconnected" slot="end">
+            <ion-buttons slot="end" *ngIf="this.loaded">
+                <sf-status [account]="account"></sf-status>
+            </ion-buttons>
+        </div>
+        <ng-template #disconnected >
+            <ion-buttons slot="end">
+                <ion-button (click)="authorize()" class="sf_button">
+                    <ion-icon name="log-in-outline" class="sf_icons"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ng-template>
+        <ion-label slot="start" class="sf_general_title">
+            SPOTIFINE
+        </ion-label>
+    </ion-toolbar>
+</ion-header>

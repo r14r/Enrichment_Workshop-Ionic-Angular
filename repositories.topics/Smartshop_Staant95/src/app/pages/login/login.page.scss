@@ -1,0 +1,47 @@
+ion-item{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+ion-avatar{
+  width:10em;
+  height:10em;
+}
+
+.title{
+  font-family: shopie;
+  font-size: 4em;
+  color: var(--ion-color-tertiary);
+  margin-bottom: 2em;
+}
+
+.email,  .password{
+  margin-top:2em;
+}
+
+ion-button{
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 0.5em;
+  color: var(--ion-color-primary);
+  --box-shadow:none;
+}
+
+a{
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+form {
+  display:flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  height: 100%;
+}
+
+ion-content{
+  background-image: url("https://image.freepik.com/vettori-gratuito/modello-su-shopping_1061-495.jpg") !important;
+}
+
+.login-button{
+  display:flex; flex-direction: column; justify-content: center; height: 100%;
+}

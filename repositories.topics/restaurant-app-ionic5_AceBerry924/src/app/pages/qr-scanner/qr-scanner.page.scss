@@ -1,0 +1,65 @@
+:host {
+  .CardContainer, .step {
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .scan-qr-wrapper {
+    position: relative;
+    margin-top: -10px;
+
+    .scanBtn {
+      width: 140px;
+      height: 140px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+    }
+  
+    .scanBtn ion-icon {
+      font-size: 170px;
+      color: #302d2d;
+      z-index: 99;
+    }
+  }
+
+  .textScan {
+    width: 50px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: calc((100% - 50px) / 2);
+    top: calc((100% - 0px) / 2);
+  }
+
+  .arrow {
+    width: 100%;
+    color: #f09733;
+    font-size: 68px;
+    margin-top: -20px;
+  }
+
+  ion-card {
+    box-shadow: none;
+    color: #222;
+    margin-bottom: 0;
+
+    ion-card-header {
+      color: #222;
+    }
+
+    .card-content-md {
+      padding-bottom: 0;
+
+      p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

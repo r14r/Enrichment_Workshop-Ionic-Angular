@@ -1,0 +1,25 @@
+:host {
+  ion-list {
+    ion-item {
+      --border-color: #fff;
+
+      ion-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  ion-content.md {
+    --background: #49362e;
+  }
+
+  .list-md {
+    background: #49362e;
+    --color: #fff;
+
+    ion-item {
+      --background: #49362e;
+      --color: #fff;
+    }
+  }
+}

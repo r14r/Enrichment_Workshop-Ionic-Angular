@@ -1,0 +1,55 @@
+
+ion-item{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+ion-avatar{
+  width:10em;
+  height:10em;
+  background-color: #ddd;
+}
+
+.username{
+  font-size: 2em;
+  font-family: shopie;
+}
+
+.mail{
+  font-size:1em;
+  color: var(--ion-color-tertiary);
+}
+
+ion-button{
+  border: 1px solid var(--ion-color-primary);
+  border-radius: 0.5em;
+  color: var(--ion-color-primary);
+  --box-shadow:none;
+}
+
+a{
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.notifiche-offerte, .notifiche-liste{
+  color: var(--ion-color-tertiary);
+}
+
+.box-container{
+  display:flex; flex-direction: column; justify-content: center; height: 100%;
+}
+
+.logout-button{
+  display:flex; flex-direction: column; justify-content: center; height: 100%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 0px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+}

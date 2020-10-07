@@ -1,0 +1,7 @@
+{
+  "name": "appTak",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
