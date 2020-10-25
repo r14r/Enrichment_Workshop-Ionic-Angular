@@ -1,7 +1,0 @@
-{
-  "name": "ionic-studycard",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}

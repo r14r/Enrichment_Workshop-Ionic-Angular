@@ -1,8 +1,0 @@
-{
-  "name": "My Shout",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue",
-  "id": "b4a42ffd"
-}

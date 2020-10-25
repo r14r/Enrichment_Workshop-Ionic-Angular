@@ -1,7 +1,0 @@
-{
-  "name": "wanna-eat",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

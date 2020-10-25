@@ -1,6 +1,0 @@
-{
-  "name": "mobile",
-  "dependencies": {
-    "@capacitor/ios": "2.4.0"
-  }
-}

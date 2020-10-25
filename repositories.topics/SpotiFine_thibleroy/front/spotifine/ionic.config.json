@@ -1,7 +1,0 @@
-{
-  "name": "spotifine",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

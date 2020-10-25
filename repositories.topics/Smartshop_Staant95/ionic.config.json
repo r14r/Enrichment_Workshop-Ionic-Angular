@@ -1,7 +1,0 @@
-{
-  "name": "smartshop",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

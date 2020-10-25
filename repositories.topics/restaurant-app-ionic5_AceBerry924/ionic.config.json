@@ -1,7 +1,0 @@
-{
-  "name": "restaurant",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}

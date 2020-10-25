@@ -1,7 +1,0 @@
-{
-  "name": "razorpayionic",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}

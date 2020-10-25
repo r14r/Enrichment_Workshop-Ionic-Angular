@@ -1,7 +1,0 @@
-{
-  "name": "Cloud",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
