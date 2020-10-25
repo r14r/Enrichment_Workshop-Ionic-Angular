@@ -16,5 +16,19 @@
 			"path": "../Enrichment_Workshop-Ionic-Angular_Day-04"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/environments": true,
+			"**/theme": true,
+			"**/assets": true,
+			"**/global.scss": true,
+			"**/.gitignore": true
+		},
+		"explorerExclude.backup": null
+	}
 }

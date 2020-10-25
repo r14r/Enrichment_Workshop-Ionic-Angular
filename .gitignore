@@ -2,3 +2,5 @@
 **/.autoenv
 
 **/node_modules
+
+**/repositories.*
