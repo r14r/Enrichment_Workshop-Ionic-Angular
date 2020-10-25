@@ -1,0 +1,7 @@
+{
+  "name": "app-enrichment",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

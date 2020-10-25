@@ -1,0 +1,30 @@
+{
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4,
+
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.tabWidth": 4,
+
+	"files.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/package-lock.json": true,
+		"**/*.test.js": true,
+		"**/*.spec.ts": true,
+
+		"**/main.ts": true,
+		"**/test.ts": true,
+		"**/polyfills.ts": true,
+		"**/browserslist": true,
+		"**/karma.conf.js": true,
+		"**/zone-flags.ts": true,
+		"**/angular.json": true,
+		"**/capacitor.config.json": true,
+		"**/ionic.config.json": true,
+
+		"**/*.spec.json": true
+	},
+	"explorerExclude.backup": null,
+	"workspace.isHidden": false
+}
